@@ -6,58 +6,12 @@
     <title>SpendWise - Smart Expense Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
 </head>
-<style>
-    .clay-card {
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 20px;
-        box-shadow: 
-            8px 8px 16px rgb(163, 177, 198, 0.6),
-            -8px -8px 16px rgba(255, 255, 255, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .clay-button {
-        background: linear-gradient(145deg, #e6e6e6, #ffffff);
-        box-shadow: 
-            5px 5px 10px rgb(163, 177, 198, 0.6),
-            -5px -5px 10px rgba(255, 255, 255, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        transition: all 0.3s ease;
-    }
-    .clay-button:hover {
-        box-shadow: 
-            3px 3px 6px rgb(163, 177, 198, 0.6),
-            -3px -3px 6px rgba(255, 255, 255, 0.5);
-    }
-    .clay-input {
-        background: rgba(255, 255, 255, 0.9);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: inset 2px 2px 5px rgb(163, 177, 198, 0.6);
-    }
-    .progress-bar {
-        transition: width 0.5s ease-in-out;
-    }
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f0f4f8;
-    }
-    .notification {
-        animation: slideIn 0.5s ease-out;
-    }
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-</style>
+
 <body class="min-h-screen p-4">
     <div class="max-w-7xl mx-auto">
         <!-- Header -->
